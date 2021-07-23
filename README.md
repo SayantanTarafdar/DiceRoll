@@ -1,3 +1,31 @@
+### Running the Dice Roll locally
+
+The Dice Roll can be run locally using the following Maven goal:
+
+    mvn spring-boot:run
+    
+ Swagger UI:
+
+    http://localhost:8080/services/api-docs?url=/services/swagger.json
+    
+ Roll:
+ 	http://localhost:8080/services/roll?dices=<int,min 1>&sides=<int,min 4>&rolls=<int,min 1>
+	
+ Query:
+ 	http://localhost:8080/services/roll/query
+	
+	Response Grouped By :
+		Simulation ID
+			L Dices
+			    L Sides
+			    	L Rolls
+				
+
+***Please ignore the below details.
+
+
+
+
 # Spring-Boot CXF JAXRS QuickStart
 
 This example demonstrates how you can use Apache CXF with Spring Boot
